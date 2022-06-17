@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/575b405ee7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Momentum App</title>
+  </head>
+
+  <body>
+    <div id="background">
+      <div id="before-login" class="hidden">
+        <span id="hello">Hello, what is your name?</span>
+        <form id="login-form">
+          <input required maxlength="15" type="text" />
+        </form>
+      </div>
+      <div id="after-login" class="hidden">
+        <div id="main-info">
+          <h2 id="clock">00:00</h2>
+          <h1 id="greeting"></h1>
+        </div>
+        <div id="main-focus">
+          <span id="focus-question" class="hidden"
+            >What is your main focus for today?</span
+          >
+          <form id="focus-form" class="hidden">
+            <input required type="text" />
+          </form>
+          <div id="todays-focus" class="hidden">
+            <span>TODAY</span>
+            <br />
+            <span></span>
+          </div>
+        </div>
+        <div id="weather">
+          <span></span>
+          <br />
+          <span></span>
+        </div>
+        <div id="quote">
+          <span></span>
+          <br />
+          <span></span>
+        </div>
+        <div id="todo">
+          <ul id="todo-list"></ul>
+          <form id="todo-form">
+            <input type="text" placeholder="New Todo" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/background.js"></script>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/clock.js"></script>
+    <script src="./js/mainFocus.js"></script>
+    <script src="./js/quotes.js"></script>
+    <script src="./js/subTodo.js"></script>
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
